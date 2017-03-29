@@ -1,32 +1,14 @@
-require "json"
-require "sequel"
-require "sinatra"
+module API
+  autoload :Config,    "app/config"
+  autoload :Endpoints, "app/endpoints"
+  autoload :Loader,    "app/loader"
+  autoload :Models,    "app/models"
+  autoload :Web,       "app/web"
 
-#
-# = Examples
-#
-# To encode JSON:
-#
-#   JSON.generate([1, 2, 3])
-#
-# Get a query parameter:
-#
-#   params[:max]
-#
-# Get a request header:
-#
-#   request.env["HTTP_RANGE"]
-#
-# Set a response header:
-#
-#   headers["Range"] = "hello"
-#
-# Connect to a database using Sequel:
-#
-#   DB = Sequel.connect(ENV["DATBASE_URL"])
-#   DB[:items].limit(5).all
-#
-
-get "/" do
-  "Hello, world"
+  def self.load!(env = nil)
+    return if @loaded
+    @loaded = true
+    $LOAD_PATH << __dir__
+    Loader.load! env
+  end
 end
