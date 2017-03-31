@@ -43,3 +43,19 @@ There's also an endpoint called `API::Endpoints::Things` that is mounted under
 database.
 
 TODO: describe how pagination should work.
+
+### Example Inputs
+
+#### Range Headers
+
+```
+Range: id 0..100
+```
+
+```
+range: name ..; order=desc
+```
+
+```
+range: 
+```
