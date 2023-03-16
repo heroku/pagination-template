@@ -3,8 +3,8 @@ source "https://rubygems.org"
 ruby "2.3.3"
 #ruby-gemset=pagination
 
-gem "activerecord",         "~> 5.0.2"
-gem "activesupport",        "~> 5.0.2"
+gem "activerecord", "~> 6.1.7", ">= 6.1.7.3"
+gem "activesupport", "~> 6.1.7", ">= 6.1.7.3"
 gem "dotenv",               "~> 2.2.0"
 gem "pg",                   "~> 0.20"
 gem "pry",                  "~> 0.10.4"
