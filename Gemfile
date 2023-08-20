@@ -8,7 +8,7 @@ gem "activesupport",        "~> 5.0.2"
 gem "dotenv",               "~> 2.2.0"
 gem "pg",                   "~> 0.20"
 gem "pry",                  "~> 0.10.4"
-gem "puma",                 "~> 3.8.2"
+gem "puma", "~> 5.6.7"
 gem "rake",                 "~> 12.0"
 gem "sinatra",              "~> 1.4.8"
 gem "sinatra-activerecord", "~> 2.0.12", require: false
