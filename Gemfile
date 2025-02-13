@@ -12,7 +12,7 @@ gem "puma",                 "~> 3.8.2"
 gem "rake",                 "~> 12.0"
 gem "sinatra",              "~> 1.4.8"
 gem "sinatra-activerecord", "~> 2.0.12", require: false
-gem "sinatra-contrib",      "~> 1.4",    require: false
+gem "sinatra-contrib", "~> 2.0", ">= 2.0.0", require: false
 gem "sinatra-router",       "~> 0.2.3",  require: false
 
 group :test do
